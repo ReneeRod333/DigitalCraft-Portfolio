@@ -1,0 +1,350 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Julius Sans One', Verdana, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+body {
+    background-color: black;
+}
+
+/* Header and navigation */
+.header {
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+    background: linear-gradient(transparent, black 60%), url("../images/pexels-steve-johnson-5685604.jpg");
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+}
+.name-avatar {
+
+    height: 500px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Arizonia", cursive;
+    text-shadow: 2px 4px 2px rgba(177, 7, 149, 0.542);
+}
+.name {
+    height: 70px;
+    font-family: "Reenie Beanie", cursive;
+    font-size: 70px;
+    font-weight: 400;
+    color: white
+}
+.avatar {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+.avatar img {
+    height: 250px;
+    object-fit: contain;
+    border-radius: 30px;
+    border: 2px solid rgb(0, 0, 0);
+
+}
+.navigation-subtitle {
+    height: 500px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.navigation {
+    height: 100px;
+    width: 80%;
+}
+.header nav ul li {
+    display: inline-block;
+    font-size: 30px;
+    padding-top: 15px;
+}
+.rounded-corners {
+    border-radius: 15px 0px 15px 0px;
+    padding: 5px 20px;
+    background-color: rgb(223, 216, 21);
+    box-shadow: inset 0 0 2px white;
+    color: black;
+}
+.subtitle {
+    height: 250px;
+    width: 100%;
+    color: rgb(13, 185, 215);
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 100px;
+}
+
+/* Sidebar Locator Headings */
+.sidebar-heading {
+    height: 50px;
+    width: 35%;
+    text-align: right;
+    padding-right: 60px;
+    padding-top: 12px;
+}
+.about-me-locator {
+    background: linear-gradient(to right, transparent, rgb(238, 4, 156) 150%);
+}
+.work-locator {
+    background: linear-gradient(to right, transparent, rgb(4, 241, 217) 150%);
+}
+.contact-locator {
+    background: linear-gradient(to right, transparent, rgb(13, 185, 215) 150%);
+}
+
+/* About Me */
+.about-me {
+    display: flex;
+    height: 250px;
+    align-items: center;
+    flex-direction: row;
+}
+.about-me-summary {
+    height: 250px;
+    width: 70%;
+    padding-block: auto;
+    text-align: justify;
+    position: relative;
+}
+.about-me-summary p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 70px;
+}
+
+/* Work */
+.work {
+    display: flex;
+    height: 600px;
+    align-items: center;
+    flex-direction: row;
+}
+.projects {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+.future-projects { 
+    position: relative;
+}
+.active-project {
+    height: 40%;
+    width: 90%;
+}
+.other-projects {
+    display: flex;
+    height: 60%;
+    width: 90%;
+    padding-top: 20px;
+}
+.future-projects img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 30px;
+    margin:auto 0;
+    border: 1px solid rgb(223, 216, 21);
+    border-radius: 120px;
+}
+.future-projects h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(223, 216, 21);
+    border-radius: 10px;
+    padding: 10px 1px;
+    background-color: rgba(3, 3, 3, 0.650);
+    box-shadow: inset 0 0 2px white;
+  }
+
+/* Footer */
+.contact {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+.contact-info {
+    height: 70px;
+    width: 70%;
+    padding-top: 22px;
+}
+.contact-info ul li {
+    display: inline-block;
+    margin-left: 2px;
+}
+.contact-links {
+    border-radius: 15px 0px 15px 0px;
+    padding: 5px 20px;
+    background-color: rgba(238, 4, 156, 0.588);
+    box-shadow: inset 0 0 2px rgb(255, 255, 255);
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 800px) {
+    .name-avatar, .navigation-subtitle, .about-me, .work, .contact {
+    }
+    * {
+        font-size: 13px;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .name-avatar {
+        flex: 10%;
+        margin: auto;
+    }
+    .name {
+        font-size: 50px;
+        height: 75px;
+        padding-top: 10px;
+    }
+    .avatar img {
+        height: 200px;
+        margin: 20px;
+    }
+    .navigation-subtitle {
+        margin: auto;
+        height: 190px;
+    }
+    .header nav {
+        padding-top: 10px;
+        height: 100px;
+    }
+    .subtitle {
+        font-size: 25px;
+        padding-top: 20px;
+    }
+    .about-me-summary {
+        text-align: start;
+        width: 90%;
+        height: 175px;
+        padding-top: 27px;
+    }
+    .projects {
+        height: 30%;
+        width: 80%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    .future-projects {
+        height: 50%;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .future-projects img {
+        height: 200px;
+        width: 100%;
+    }
+    .contact-info {
+        padding-top: 30px;
+    }
+    .about-me, .work, .contact {
+        flex-direction: column;
+        height: 100%;
+    }
+    .about-me-locator, .work-locator, .contact-locator {
+        padding-left: 3%;
+        text-align: left;
+        width: 100%;
+        padding-top: 8px;
+        height: 30px;
+    }
+    .about-me-locator {
+        background: linear-gradient(to left, transparent, rgb(238, 4, 156) 150%);
+    }
+    .work-locator {
+        background: linear-gradient(to left, transparent, rgb(4, 241, 217) 150%);
+    }
+    .contact-locator {
+        background: linear-gradient(to left, transparent, rgb(13, 185, 215) 150%);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .name-avatar, .navigation-subtitle, .about-me, .work, .contact {   
+    }
+    * {
+        font-size: 12px !important;
+    }
+    .header {
+        flex-direction: column;
+        height: 100%;
+        background: linear-gradient(transparent, black 80%), url("../images/pexels-steve-johnson-5685604.jpg");
+        background-size: 100% 100%;
+        background-repeat: inherit;
+    }
+    .name {
+        font-size: 40px !important;
+        height: 100px !important;
+        padding-top: 0px !important;
+    }
+    .avatar {
+        margin-top: 0px;
+    }
+    .avatar img {
+        height: 125px !important;
+    }
+    .navigation-subtitle {
+        margin: auto;
+        height: 125px;
+    }
+    .header nav {
+        padding-top: 18px;
+        height: 50px;
+        white-space: nowrap;
+    }
+    .navigation {
+        width: 100%;
+    }
+    .header nav ul li {
+        display: inline;
+    }
+    .subtitle {
+        font-size: 20px !important;
+    }
+    .about-me-summary {
+        text-align: start;
+        width: 90%;
+        height: 175px;
+    }
+    .about-me-summary p {
+        width: 97%;
+        text-align: justify;
+        padding: 0px;
+    }
+    .projects {
+        height:;
+    }
+    .future-projects img {
+        height: 100px;
+        width: 100%;  
+    }
+    .about-me-locator, .work-locator, .contact-locator {
+        padding-top: 5px;
+        height: 25px;
+        margin-top: 25px;
+    }
+    .contact-info {
+    width: 100%;
+    padding-right: 10px;
+    }
+}
