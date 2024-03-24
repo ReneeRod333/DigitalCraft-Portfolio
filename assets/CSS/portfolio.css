@@ -200,8 +200,6 @@ body {
 
 /* Responsive Styling */
 @media screen and (max-width: 800px) {
-    .name-avatar, .navigation-subtitle, .about-me, .work, .contact {
-    }
     * {
         font-size: 13px;
     }
@@ -280,8 +278,6 @@ body {
 }
 
 @media screen and (max-width: 400px) {
-    .name-avatar, .navigation-subtitle, .about-me, .work, .contact {   
-    }
     * {
         font-size: 12px !important;
     }
@@ -330,9 +326,6 @@ body {
         width: 97%;
         text-align: justify;
         padding: 0px;
-    }
-    .projects {
-        height:;
     }
     .future-projects img {
         height: 100px;
