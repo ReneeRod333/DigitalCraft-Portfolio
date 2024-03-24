@@ -32,7 +32,7 @@ body {
     font-family: "Arizonia", cursive;
     text-shadow: 2px 4px 2px rgba(177, 7, 149, 0.542);
 }
-.name h1 {
+.name {
     height: 70px;
     font-family: "Reenie Beanie", cursive;
     font-size: 70px;
@@ -233,7 +233,7 @@ body {
         flex: 10%;
         margin: auto;
     }
-    .name h1 {
+    .name {
         font-size: 50px;
         height: 75px;
         padding-top: 10px;
@@ -315,7 +315,7 @@ body {
         background-size: 100% 100%;
         background-repeat: inherit;
     }
-    .name h1 {
+    .name {
         font-size: 40px !important;
         height: 100px !important;
         padding-top: 0px !important;
