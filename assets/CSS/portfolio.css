@@ -82,8 +82,25 @@ body {
     color: rgb(13, 185, 215);
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
-    text-align: center;
     padding-top: 100px;
+}
+
+/* Sidebar Locator Headings */
+.sidebar-heading {
+    height: 50px;
+    width: 35%;
+    text-align: right;
+    padding-right: 60px;
+    padding-top: 12px;
+}
+.about-me-locator {
+    background: linear-gradient(to right, transparent, rgb(238, 4, 156) 150%);
+}
+.work-locator {
+    background: linear-gradient(to right, transparent, rgb(4, 241, 217) 150%);
+}
+.contact-locator {
+    background: linear-gradient(to right, transparent, rgb(13, 185, 215) 150%);
 }
 
 /* About Me */
@@ -92,14 +109,6 @@ body {
     height: 250px;
     align-items: center;
     flex-direction: row;
-}
-.about-me-locator {
-    height: 50px;
-    width: 35%;
-    text-align: right;
-    padding-right: 60px;
-    padding-top: 12px;
-    background: linear-gradient(to right, transparent, rgb(238, 4, 156) 150%);
 }
 .about-me-summary {
     height: 250px;
@@ -122,16 +131,6 @@ body {
     align-items: center;
     flex-direction: row;
 }
-
-.work-locator {
-    height: 50px;
-    width: 35%;
-    text-align: right;
-    padding-right: 60px;
-    padding-top: 12px;
-    background: linear-gradient(to right, transparent, rgb(4, 241, 217) 150%);
-}
-
 .projects {
     height: 100%;
     width: 70%;
@@ -141,14 +140,12 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
 .future-projects { 
     position: relative;
 }
 .active-project {
     height: 40%;
     width: 90%;
-    
 }
 .other-projects {
     display: flex;
@@ -156,16 +153,7 @@ body {
     width: 90%;
     padding-top: 20px;
 }
-.active-project img {
-    height: 100%;
-    width: 100%;
-    object-fit: fill;
-    border-radius: 30px;
-    margin:auto 0;
-    border: 1px solid rgb(223, 216, 21);
-    border-radius: 120px;
-}
-.other-projects img {
+.future-projects img {
     height: 100%;
     width: 100%;
     object-fit: fill;
@@ -194,14 +182,6 @@ body {
     flex-direction: row;
     text-align: center;
 }
-.contact-locator {
-    height: 50px;
-    width: 35%;
-    text-align: right;
-    padding-right: 60px;
-    padding-top: 12px;
-    background: linear-gradient(to right, transparent, rgb(13, 185, 215) 150%);
-}
 .contact-info {
     height: 70px;
     width: 70%;
@@ -221,7 +201,6 @@ body {
 /* Responsive Styling */
 @media screen and (max-width: 800px) {
     .name-avatar, .navigation-subtitle, .about-me, .work, .contact {
-
     }
     * {
         font-size: 13px;
@@ -298,12 +277,10 @@ body {
     .contact-locator {
         background: linear-gradient(to left, transparent, rgb(13, 185, 215) 150%);
     }
-   
 }
 
 @media screen and (max-width: 400px) {
-    .name-avatar, .navigation-subtitle, .about-me, .work, .contact {
-        
+    .name-avatar, .navigation-subtitle, .about-me, .work, .contact {   
     }
     * {
         font-size: 12px !important;
