@@ -7,9 +7,9 @@ DigitalCraft Portfolio is my personal portfolio built using HTML and CSS. When c
 
 ### Deployed Project: 
 
-Repo Link:
+Repo Link: https://github.com/ReneeRod333/DigitalCraft-Portfolio
 
-Live Link: 
+Live Link: https://reneerod333.github.io/DigitalCraft-Portfolio/
 
 
 ### Project Example
